@@ -9,7 +9,7 @@ const Form = props => (
   </form>
 );
 
-// PropTypes
+// PropTypes Check
 Form.propTypes = {
   getWeather: PropTypes.func.isRequired
 };
