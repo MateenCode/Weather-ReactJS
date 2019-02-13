@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const Form = props => (
   <form onSubmit={props.getWeather}>
@@ -7,5 +8,10 @@ const Form = props => (
     <button>Get Weather</button>
   </form>
 );
+
+// PropTypes
+Form.propTypes = {
+  getWeather: PropTypes.func.isRequired
+};
 
 export default Form;

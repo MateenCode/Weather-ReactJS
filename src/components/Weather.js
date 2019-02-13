@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const Weather = props => (
   <div className="mt-4 ">
@@ -29,4 +30,7 @@ const Weather = props => (
     {props.error && <p>{props.error}</p>}
   </div>
 );
+
+// PropTypes
+Weather.propTypes = {};
 export default Weather;
